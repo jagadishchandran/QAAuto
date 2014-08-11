@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20140808 19:33:59.612" generator="Robot 2.8.3 (Python 2.7.3 on win32)">
+<suite id="s1" name="DemoTesSuite &amp; DemoTesSuite1 &amp; DemoTesSuite3 &amp; DemoTesSuite4">
+<suite source="C:\Users\p7164460\.jenkins\jobs\SmokeTest_Template\workspace\DemoTesSuite.txt" id="s1-s1" name="DemoTesSuite">
+<test id="s1-s1-t1" name="HomePage">
+<kw type="kw" name="Open Application">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="BuiltIn.Run Keyword If">
+<doc>Runs the given keyword with the given arguments, if `condition` is true.</doc>
+<arguments>
+<arg>'${GRID.lower()}'=='true'</arg>
+<arg>Open Browser</arg>
+<arg>${LOGINURL}</arg>
+<arg>${BROWSER}</arg>
+<arg>None</arg>
+<arg>http://${hub_server}:4444/wd/hub</arg>
+<arg>ELSE</arg>
+<arg>Open Browser</arg>
+<arg>${LOGINURL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${LOGINURL}</arg>
+<arg>${BROWSER}</arg>
+<arg>None</arg>
+<arg>http://${hub_server}:4444/wd/hub</arg>
+</arguments>
+<msg timestamp="20140808 19:34:03.315" level="INFO">Opening browser 'ff' to base url 'http://dr.inventoryplus.dealertrack.com/admin' through remote server at 'http://172.27.186.152:4444/wd/hub'</msg>
+<status status="PASS" endtime="20140808 19:34:21.852" starttime="20140808 19:34:03.313"></status>
+</kw>
+<status status="PASS" endtime="20140808 19:34:21.853" starttime="20140808 19:34:03.312"></status>
+</kw>
+<status status="PASS" endtime="20140808 19:34:21.853" starttime="20140808 19:34:03.310"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Element Should Be Visible">
+<doc>Verifies that the element identified by `locator` is visible.</doc>
+<arguments>
+<arg>username</arg>
+</arguments>
+<msg timestamp="20140808 19:34:21.854" level="INFO">Verifying element 'username' is visible.</msg>
+<status status="PASS" endtime="20140808 19:34:22.011" starttime="20140808 19:34:21.854"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Close Window">
+<doc>Closes currently opened pop-up window.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140808 19:34:22.034" starttime="20140808 19:34:22.012"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140808 19:34:22.035" critical="yes" starttime="20140808 19:34:03.309"></status>
+</test>
+<test id="s1-s1-t2" name="Login">
+<kw type="kw" name="Open Application">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="BuiltIn.Run Keyword If">
+<doc>Runs the given keyword with the given arguments, if `condition` is true.</doc>
+<arguments>
+<arg>'${GRID.lower()}'=='true'</arg>
+<arg>Open Browser</arg>
+<arg>${LOGINURL}</arg>
+<arg>${BROWSER}</arg>
+<arg>None</arg>
+<arg>http://${hub_server}:4444/wd/hub</arg>
+<arg>ELSE</arg>
+<arg>Open Browser</arg>
+<arg>${LOGINURL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${LOGINURL}</arg>
+<arg>${BROWSER}</arg>
+<arg>None</arg>
+<arg>http://${hub_server}:4444/wd/hub</arg>
+</arguments>
+<msg timestamp="20140808 19:34:56.781" level="INFO">Opening browser 'ff' to base url 'http://dr.inventoryplus.dealertrack.com/admin' through remote server at 'http://172.27.186.152:4444/wd/hub'</msg>
+<status status="PASS" endtime="20140808 19:35:14.785" starttime="20140808 19:34:56.779"></status>
+</kw>
+<status status="PASS" endtime="20140808 19:35:14.786" starttime="20140808 19:34:56.777"></status>
+</kw>
+<status status="PASS" endtime="20140808 19:35:14.786" starttime="20140808 19:34:56.776"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>username</arg>
+<arg>top_qa</arg>
+</arguments>
+<msg timestamp="20140808 19:35:14.788" level="INFO">Typing text 'top_qa' into text field 'username'</msg>
+<status status="PASS" endtime="20140808 19:35:15.205" starttime="20140808 19:35:14.787"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Password">
+<doc>Types the given password into text field identified by `locator`.</doc>
+<arguments>
+<arg>password</arg>
+<arg>test</arg>
+</arguments>
+<msg timestamp="20140808 19:35:15.207" level="INFO">Typing password into text field 'password'</msg>
+<status status="PASS" endtime="20140808 19:35:15.324" starttime="20140808 19:35:15.206"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>//input[contains(@src,'login')][@value='submit']</arg>
+</arguments>
+<msg timestamp="20140808 19:35:15.326" level="INFO">Clicking button '//input[contains(@src,'login')][@value='submit']'.</msg>
+<status status="PASS" endtime="20140808 19:35:29.693" starttime="20140808 19:35:15.325"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Wait Until Keyword Succeeds">
+<doc>Waits until the specified keyword succeeds or the given timeout expires.</doc>
+<arguments>
+<arg>3 min</arg>
+<arg>30 sec</arg>
+<arg>Element Should Contain</arg>
+<arg>//span[@class='login_info']//span[@id='user_tooltip_trigger']//a</arg>
+<arg>top_qa</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Element Should Contain">
+<doc>Verifies element identified by `locator` contains text `expected`.</doc>
+<arguments>
+<arg>//span[@class='login_info']//span[@id='user_tooltip_trigger']//a</arg>
+<arg>top_qa</arg>
+</arguments>
+<msg timestamp="20140808 19:35:29.696" level="INFO">Verifying element '//span[@class='login_info']//span[@id='user_tooltip_trigger']//a' contains text 'top_qa'.</msg>
+<status status="PASS" endtime="20140808 19:35:29.765" starttime="20140808 19:35:29.695"></status>
+</kw>
+<status status="PASS" endtime="20140808 19:35:29.766" starttime="20140808 19:35:29.694"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Element Should Contain">
+<doc>Verifies element identified by `locator` contains text `expected`.</doc>
+<arguments>
+<arg>//span[@class='login_info']</arg>
+<arg>Logged in as</arg>
+</arguments>
+<msg timestamp="20140808 19:35:29.767" level="INFO">Verifying element '//span[@class='login_info']' contains text 'Logged in as'.</msg>
+<status status="PASS" endtime="20140808 19:35:29.872" starttime="20140808 19:35:29.766"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Close Window">
+<doc>Closes currently opened pop-up window.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140808 19:35:29.894" starttime="20140808 19:35:29.873"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140808 19:35:29.894" critical="yes" starttime="20140808 19:34:56.774"></status>
+</test>
+<doc>Demo on Robot Framework Automation Script Development</doc>
+<metadata>
+</metadata>
+<status status="PASS" endtime="20140808 19:35:37.112" starttime="20140808 19:34:02.739"></status>
+</suite>
+<suite source="C:\Users\p7164460\.jenkins\jobs\SmokeTest_Template\workspace\DemoTesSuite1.txt" id="s1-s2" name="DemoTesSuite1">
+<test id="s1-s2-t1" name="LogOut">
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://dr.inventoryplus.dealertrack.com/admin</arg>
+<arg>ff</arg>
+</arguments>
+<msg timestamp="20140808 19:35:37.136" level="INFO">Opening browser 'ff' to base url 'http://dr.inventoryplus.dealertrack.com/admin'</msg>
+<status status="PASS" endtime="20140808 19:35:53.911" starttime="20140808 19:35:37.135"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>username</arg>
+<arg>top_qa</arg>
+</arguments>
+<msg timestamp="20140808 19:35:53.912" level="INFO">Typing text 'top_qa' into text field 'username'</msg>
+<status status="PASS" endtime="20140808 19:35:54.087" starttime="20140808 19:35:53.912"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Password">
+<doc>Types the given password into text field identified by `locator`.</doc>
+<arguments>
+<arg>password</arg>
+<arg>test</arg>
+</arguments>
+<msg timestamp="20140808 19:35:54.088" level="INFO">Typing password into text field 'password'</msg>
+<status status="PASS" endtime="20140808 19:35:54.163" starttime="20140808 19:35:54.087"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>//input[contains(@src,'login')][@value='submit']</arg>
+</arguments>
+<msg timestamp="20140808 19:35:54.164" level="INFO">Clicking button '//input[contains(@src,'login')][@value='submit']'.</msg>
+<status status="PASS" endtime="20140808 19:36:08.578" starttime="20140808 19:35:54.164"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Wait Until Keyword Succeeds">
+<doc>Waits until the specified keyword succeeds or the given timeout expires.</doc>
+<arguments>
+<arg>3 min</arg>
+<arg>30 sec</arg>
+<arg>Element Should Contain</arg>
+<arg>//span[@class='login_info']//span[@id='user_tooltip_trigger']//a</arg>
+<arg>top_qa</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Element Should Contain">
+<doc>Verifies element identified by `locator` contains text `expected`.</doc>
+<arguments>
+<arg>//span[@class='login_info']//span[@id='user_tooltip_trigger']//a</arg>
+<arg>top_qa</arg>
+</arguments>
+<msg timestamp="20140808 19:36:08.580" level="INFO">Verifying element '//span[@class='login_info']//span[@id='user_tooltip_trigger']//a' contains text 'top_qa'.</msg>
+<status status="PASS" endtime="20140808 19:36:08.632" starttime="20140808 19:36:08.580"></status>
+</kw>
+<status status="PASS" endtime="20140808 19:36:08.633" starttime="20140808 19:36:08.579"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Element Should Contain">
+<doc>Verifies element identified by `locator` contains text `expected`.</doc>
+<arguments>
+<arg>//span[@class='login_info']</arg>
+<arg>Logged in as</arg>
+</arguments>
+<msg timestamp="20140808 19:36:08.634" level="INFO">Verifying element '//span[@class='login_info']' contains text 'Logged in as'.</msg>
+<status status="PASS" endtime="20140808 19:36:08.712" starttime="20140808 19:36:08.633"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Execute Javascript">
+<doc>Executes the given JavaScript code.</doc>
+<arguments>
+<arg>document.getElementById('user_tooltip').children.item(1).children.item(1).children.item(0).click();</arg>
+</arguments>
+<msg timestamp="20140808 19:36:08.714" level="INFO">Executing JavaScript:
+document.getElementById('user_tooltip').children.item(1).children.item(1).children.item(0).click();</msg>
+<status status="PASS" endtime="20140808 19:36:08.882" starttime="20140808 19:36:08.713"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Close Window">
+<doc>Closes currently opened pop-up window.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140808 19:36:08.965" starttime="20140808 19:36:08.883"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140808 19:36:08.965" critical="yes" starttime="20140808 19:35:37.134"></status>
+</test>
+<doc>Demo on Robot Framework Automation Script Development</doc>
+<metadata>
+</metadata>
+<status status="PASS" endtime="20140808 19:36:16.000" starttime="20140808 19:35:37.116"></status>
+</suite>
+<suite source="C:\Users\p7164460\.jenkins\jobs\SmokeTest_Template\workspace\DemoTesSuite3.txt" id="s1-s3" name="DemoTesSuite3">
+<test id="s1-s3-t1" name="HomePage">
+<kw type="kw" name="Open Application">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="BuiltIn.Run Keyword If">
+<doc>Runs the given keyword with the given arguments, if `condition` is true.</doc>
+<arguments>
+<arg>'${GRID.lower()}'=='true'</arg>
+<arg>Open Browser</arg>
+<arg>${LOGINURL}</arg>
+<arg>${BROWSER}</arg>
+<arg>None</arg>
+<arg>http://${hub_server}:4444/wd/hub</arg>
+<arg>ELSE</arg>
+<arg>Open Browser</arg>
+<arg>${LOGINURL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${LOGINURL}</arg>
+<arg>${BROWSER}</arg>
+<arg>None</arg>
+<arg>http://${hub_server}:4444/wd/hub</arg>
+</arguments>
+<msg timestamp="20140808 19:36:16.025" level="INFO">Opening browser 'ff' to base url 'http://dr.inventoryplus.dealertrack.com/admin' through remote server at 'http://172.27.186.152:4444/wd/hub'</msg>
+<status status="PASS" endtime="20140808 19:38:00.280" starttime="20140808 19:36:16.024"></status>
+</kw>
+<status status="PASS" endtime="20140808 19:38:00.280" starttime="20140808 19:36:16.023"></status>
+</kw>
+<status status="PASS" endtime="20140808 19:38:00.281" starttime="20140808 19:36:16.022"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Element Should Be Visible">
+<doc>Verifies that the element identified by `locator` is visible.</doc>
+<arguments>
+<arg>username</arg>
+</arguments>
+<msg timestamp="20140808 19:38:00.282" level="INFO">Verifying element 'username' is visible.</msg>
+<status status="PASS" endtime="20140808 19:38:00.377" starttime="20140808 19:38:00.282"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Close Window">
+<doc>Closes currently opened pop-up window.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140808 19:38:00.394" starttime="20140808 19:38:00.378"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140808 19:38:00.395" critical="yes" starttime="20140808 19:36:16.020"></status>
+</test>
+<test id="s1-s3-t2" name="Login">
+<kw type="kw" name="Open Application">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="BuiltIn.Run Keyword If">
+<doc>Runs the given keyword with the given arguments, if `condition` is true.</doc>
+<arguments>
+<arg>'${GRID.lower()}'=='true'</arg>
+<arg>Open Browser</arg>
+<arg>${LOGINURL}</arg>
+<arg>${BROWSER}</arg>
+<arg>None</arg>
+<arg>http://${hub_server}:4444/wd/hub</arg>
+<arg>ELSE</arg>
+<arg>Open Browser</arg>
+<arg>${LOGINURL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${LOGINURL}</arg>
+<arg>${BROWSER}</arg>
+<arg>None</arg>
+<arg>http://${hub_server}:4444/wd/hub</arg>
+</arguments>
+<msg timestamp="20140808 19:38:07.195" level="INFO">Opening browser 'ff' to base url 'http://dr.inventoryplus.dealertrack.com/admin' through remote server at 'http://172.27.186.152:4444/wd/hub'</msg>
+<status status="PASS" endtime="20140808 19:39:50.947" starttime="20140808 19:38:07.194"></status>
+</kw>
+<status status="PASS" endtime="20140808 19:39:50.948" starttime="20140808 19:38:07.192"></status>
+</kw>
+<status status="PASS" endtime="20140808 19:39:50.949" starttime="20140808 19:38:07.190"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>username</arg>
+<arg>top_qa</arg>
+</arguments>
+<msg timestamp="20140808 19:39:50.950" level="INFO">Typing text 'top_qa' into text field 'username'</msg>
+<status status="PASS" endtime="20140808 19:39:51.086" starttime="20140808 19:39:50.950"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Password">
+<doc>Types the given password into text field identified by `locator`.</doc>
+<arguments>
+<arg>password</arg>
+<arg>test</arg>
+</arguments>
+<msg timestamp="20140808 19:39:51.088" level="INFO">Typing password into text field 'password'</msg>
+<status status="PASS" endtime="20140808 19:39:51.163" starttime="20140808 19:39:51.087"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>//input[contains(@src,'login')][@value='submit']</arg>
+</arguments>
+<msg timestamp="20140808 19:39:51.165" level="INFO">Clicking button '//input[contains(@src,'login')][@value='submit']'.</msg>
+<status status="PASS" endtime="20140808 19:40:00.376" starttime="20140808 19:39:51.164"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Wait Until Keyword Succeeds">
+<doc>Waits until the specified keyword succeeds or the given timeout expires.</doc>
+<arguments>
+<arg>3 min</arg>
+<arg>30 sec</arg>
+<arg>Element Should Contain</arg>
+<arg>//span[@class='login_info']//span[@id='user_tooltip_trigger']//a</arg>
+<arg>top_qa</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Element Should Contain">
+<doc>Verifies element identified by `locator` contains text `expected`.</doc>
+<arguments>
+<arg>//span[@class='login_info']//span[@id='user_tooltip_trigger']//a</arg>
+<arg>top_qa</arg>
+</arguments>
+<msg timestamp="20140808 19:40:00.379" level="INFO">Verifying element '//span[@class='login_info']//span[@id='user_tooltip_trigger']//a' contains text 'top_qa'.</msg>
+<status status="PASS" endtime="20140808 19:40:00.424" starttime="20140808 19:40:00.378"></status>
+</kw>
+<status status="PASS" endtime="20140808 19:40:00.424" starttime="20140808 19:40:00.377"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Element Should Contain">
+<doc>Verifies element identified by `locator` contains text `expected`.</doc>
+<arguments>
+<arg>//span[@class='login_info']</arg>
+<arg>Logged in as</arg>
+</arguments>
+<msg timestamp="20140808 19:40:00.426" level="INFO">Verifying element '//span[@class='login_info']' contains text 'Logged in as'.</msg>
+<status status="PASS" endtime="20140808 19:40:00.481" starttime="20140808 19:40:00.425"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Close Window">
+<doc>Closes currently opened pop-up window.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140808 19:40:00.521" starttime="20140808 19:40:00.482"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140808 19:40:00.521" critical="yes" starttime="20140808 19:38:07.188"></status>
+</test>
+<doc>Demo on Robot Framework Automation Script Development</doc>
+<metadata>
+</metadata>
+<status status="PASS" endtime="20140808 19:40:07.357" starttime="20140808 19:36:16.004"></status>
+</suite>
+<suite source="C:\Users\p7164460\.jenkins\jobs\SmokeTest_Template\workspace\DemoTesSuite4.txt" id="s1-s4" name="DemoTesSuite4">
+<test id="s1-s4-t1" name="HomePage">
+<kw type="kw" name="Open Application">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="BuiltIn.Run Keyword If">
+<doc>Runs the given keyword with the given arguments, if `condition` is true.</doc>
+<arguments>
+<arg>'${GRID.lower()}'=='true'</arg>
+<arg>Open Browser</arg>
+<arg>${LOGINURL}</arg>
+<arg>${BROWSER}</arg>
+<arg>None</arg>
+<arg>http://${hub_server}:4444/wd/hub</arg>
+<arg>ELSE</arg>
+<arg>Open Browser</arg>
+<arg>${LOGINURL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${LOGINURL}</arg>
+<arg>${BROWSER}</arg>
+<arg>None</arg>
+<arg>http://${hub_server}:4444/wd/hub</arg>
+</arguments>
+<msg timestamp="20140808 19:40:07.384" level="INFO">Opening browser 'ff' to base url 'http://dr.inventoryplus.dealertrack.com/admin' through remote server at 'http://172.27.186.152:4444/wd/hub'</msg>
+<status status="PASS" endtime="20140808 19:40:25.273" starttime="20140808 19:40:07.383"></status>
+</kw>
+<status status="PASS" endtime="20140808 19:40:25.273" starttime="20140808 19:40:07.381"></status>
+</kw>
+<status status="PASS" endtime="20140808 19:40:25.274" starttime="20140808 19:40:07.380"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Element Should Be Visible">
+<doc>Verifies that the element identified by `locator` is visible.</doc>
+<arguments>
+<arg>username</arg>
+</arguments>
+<msg timestamp="20140808 19:40:25.275" level="INFO">Verifying element 'username' is visible.</msg>
+<status status="PASS" endtime="20140808 19:40:25.441" starttime="20140808 19:40:25.275"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Close Window">
+<doc>Closes currently opened pop-up window.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140808 19:40:25.465" starttime="20140808 19:40:25.442"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140808 19:40:25.466" critical="yes" starttime="20140808 19:40:07.379"></status>
+</test>
+<test id="s1-s4-t2" name="Login">
+<kw type="kw" name="Open Application">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="BuiltIn.Run Keyword If">
+<doc>Runs the given keyword with the given arguments, if `condition` is true.</doc>
+<arguments>
+<arg>'${GRID.lower()}'=='true'</arg>
+<arg>Open Browser</arg>
+<arg>${LOGINURL}</arg>
+<arg>${BROWSER}</arg>
+<arg>None</arg>
+<arg>http://${hub_server}:4444/wd/hub</arg>
+<arg>ELSE</arg>
+<arg>Open Browser</arg>
+<arg>${LOGINURL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${LOGINURL}</arg>
+<arg>${BROWSER}</arg>
+<arg>None</arg>
+<arg>http://${hub_server}:4444/wd/hub</arg>
+</arguments>
+<msg timestamp="20140808 19:40:32.138" level="INFO">Opening browser 'ff' to base url 'http://dr.inventoryplus.dealertrack.com/admin' through remote server at 'http://172.27.186.152:4444/wd/hub'</msg>
+<status status="PASS" endtime="20140808 19:40:53.380" starttime="20140808 19:40:32.137"></status>
+</kw>
+<status status="PASS" endtime="20140808 19:40:53.381" starttime="20140808 19:40:32.135"></status>
+</kw>
+<status status="PASS" endtime="20140808 19:40:53.381" starttime="20140808 19:40:32.133"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>username</arg>
+<arg>top_qa</arg>
+</arguments>
+<msg timestamp="20140808 19:40:53.382" level="INFO">Typing text 'top_qa' into text field 'username'</msg>
+<status status="PASS" endtime="20140808 19:40:53.792" starttime="20140808 19:40:53.382"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Password">
+<doc>Types the given password into text field identified by `locator`.</doc>
+<arguments>
+<arg>password</arg>
+<arg>test</arg>
+</arguments>
+<msg timestamp="20140808 19:40:53.794" level="INFO">Typing password into text field 'password'</msg>
+<status status="PASS" endtime="20140808 19:40:53.925" starttime="20140808 19:40:53.793"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>//input[contains(@src,'login')][@value='submit']</arg>
+</arguments>
+<msg timestamp="20140808 19:40:53.926" level="INFO">Clicking button '//input[contains(@src,'login')][@value='submit']'.</msg>
+<status status="PASS" endtime="20140808 19:41:09.573" starttime="20140808 19:40:53.926"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Wait Until Keyword Succeeds">
+<doc>Waits until the specified keyword succeeds or the given timeout expires.</doc>
+<arguments>
+<arg>3 min</arg>
+<arg>30 sec</arg>
+<arg>Element Should Contain</arg>
+<arg>//span[@class='login_info']//span[@id='user_tooltip_trigger']//a</arg>
+<arg>top_qa</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Element Should Contain">
+<doc>Verifies element identified by `locator` contains text `expected`.</doc>
+<arguments>
+<arg>//span[@class='login_info']//span[@id='user_tooltip_trigger']//a</arg>
+<arg>top_qa</arg>
+</arguments>
+<msg timestamp="20140808 19:41:09.576" level="INFO">Verifying element '//span[@class='login_info']//span[@id='user_tooltip_trigger']//a' contains text 'top_qa'.</msg>
+<status status="PASS" endtime="20140808 19:41:09.647" starttime="20140808 19:41:09.575"></status>
+</kw>
+<status status="PASS" endtime="20140808 19:41:09.647" starttime="20140808 19:41:09.574"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Element Should Contain">
+<doc>Verifies element identified by `locator` contains text `expected`.</doc>
+<arguments>
+<arg>//span[@class='login_info']</arg>
+<arg>Logged in as</arg>
+</arguments>
+<msg timestamp="20140808 19:41:09.648" level="INFO">Verifying element '//span[@class='login_info']' contains text 'Logged in as'.</msg>
+<status status="PASS" endtime="20140808 19:41:09.759" starttime="20140808 19:41:09.648"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Close Window">
+<doc>Closes currently opened pop-up window.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140808 19:41:09.782" starttime="20140808 19:41:09.760"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140808 19:41:09.783" critical="yes" starttime="20140808 19:40:32.131"></status>
+</test>
+<doc>Demo on Robot Framework Automation Script Development</doc>
+<metadata>
+</metadata>
+<status status="PASS" endtime="20140808 19:41:16.971" starttime="20140808 19:40:07.362"></status>
+</suite>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="PASS" endtime="20140808 19:41:16.978" starttime="20140808 19:34:02.617"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="7">Critical Tests</stat>
+<stat fail="0" pass="7">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" pass="7" id="s1" name="DemoTesSuite &amp; DemoTesSuite1 &amp; DemoTesSuite3 &amp; DemoTesSuite4">DemoTesSuite &amp; DemoTesSuite1 &amp; DemoTesSuite3 &amp; DemoTesSuite4</stat>
+<stat fail="0" pass="2" id="s1-s1" name="DemoTesSuite">DemoTesSuite &amp; DemoTesSuite1 &amp; DemoTesSuite3 &amp; DemoTesSuite4.DemoTesSuite</stat>
+<stat fail="0" pass="1" id="s1-s2" name="DemoTesSuite1">DemoTesSuite &amp; DemoTesSuite1 &amp; DemoTesSuite3 &amp; DemoTesSuite4.DemoTesSuite1</stat>
+<stat fail="0" pass="2" id="s1-s3" name="DemoTesSuite3">DemoTesSuite &amp; DemoTesSuite1 &amp; DemoTesSuite3 &amp; DemoTesSuite4.DemoTesSuite3</stat>
+<stat fail="0" pass="2" id="s1-s4" name="DemoTesSuite4">DemoTesSuite &amp; DemoTesSuite1 &amp; DemoTesSuite3 &amp; DemoTesSuite4.DemoTesSuite4</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20140808 19:35:37.102" level="WARN">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;SOAP-ENV:Envelope xmlns:ns0="http://www.wso2.org/php/xsd" xmlns:ns1="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"&gt;
+   &lt;SOAP-ENV:Header/&gt;
+   &lt;ns1:Body&gt;
+      &lt;ns0:createFolder&gt;
+         &lt;ns0:token&gt;m6bp05800l24ok9jjfiuceqjv3&lt;/ns0:token&gt;
+         &lt;ns0:folderName&gt;2014_08_08_19_33_58 &lt;/ns0:folderName&gt;
+         &lt;ns0:folderDesc&gt;&lt;/ns0:folderDesc&gt;
+         &lt;ns0:folderType&gt;Testsuite&lt;/ns0:folderType&gt;
+         &lt;ns0:parentId&gt;1439&lt;/ns0:parentId&gt;
+      &lt;/ns0:createFolder&gt;
+   &lt;/ns1:Body&gt;
+&lt;/SOAP-ENV:Envelope&gt;</msg>
+<msg timestamp="20140808 19:35:37.110" level="ERROR">Calling listener method 'end_test' of listener 'QMetry_Listener' failed: WebFault: Server raised fault: 'Duplicate folder name'</msg>
+<msg timestamp="20140808 19:36:15.995" level="WARN">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;SOAP-ENV:Envelope xmlns:ns0="http://www.wso2.org/php/xsd" xmlns:ns1="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"&gt;
+   &lt;SOAP-ENV:Header/&gt;
+   &lt;ns1:Body&gt;
+      &lt;ns0:createFolder&gt;
+         &lt;ns0:token&gt;m6bp05800l24ok9jjfiuceqjv3&lt;/ns0:token&gt;
+         &lt;ns0:folderName&gt;2014_08_08_19_33_58 &lt;/ns0:folderName&gt;
+         &lt;ns0:folderDesc&gt;&lt;/ns0:folderDesc&gt;
+         &lt;ns0:folderType&gt;Testsuite&lt;/ns0:folderType&gt;
+         &lt;ns0:parentId&gt;1439&lt;/ns0:parentId&gt;
+      &lt;/ns0:createFolder&gt;
+   &lt;/ns1:Body&gt;
+&lt;/SOAP-ENV:Envelope&gt;</msg>
+<msg timestamp="20140808 19:36:15.998" level="ERROR">Calling listener method 'end_test' of listener 'QMetry_Listener' failed: WebFault: Server raised fault: 'Duplicate folder name'</msg>
+<msg timestamp="20140808 19:38:07.184" level="WARN">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;SOAP-ENV:Envelope xmlns:ns0="http://www.wso2.org/php/xsd" xmlns:ns1="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"&gt;
+   &lt;SOAP-ENV:Header/&gt;
+   &lt;ns1:Body&gt;
+      &lt;ns0:createFolder&gt;
+         &lt;ns0:token&gt;m6bp05800l24ok9jjfiuceqjv3&lt;/ns0:token&gt;
+         &lt;ns0:folderName&gt;2014_08_08_19_33_58 &lt;/ns0:folderName&gt;
+         &lt;ns0:folderDesc&gt;&lt;/ns0:folderDesc&gt;
+         &lt;ns0:folderType&gt;Testsuite&lt;/ns0:folderType&gt;
+         &lt;ns0:parentId&gt;1439&lt;/ns0:parentId&gt;
+      &lt;/ns0:createFolder&gt;
+   &lt;/ns1:Body&gt;
+&lt;/SOAP-ENV:Envelope&gt;</msg>
+<msg timestamp="20140808 19:38:07.187" level="ERROR">Calling listener method 'end_test' of listener 'QMetry_Listener' failed: WebFault: Server raised fault: 'Duplicate folder name'</msg>
+<msg timestamp="20140808 19:40:07.353" level="WARN">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;SOAP-ENV:Envelope xmlns:ns0="http://www.wso2.org/php/xsd" xmlns:ns1="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"&gt;
+   &lt;SOAP-ENV:Header/&gt;
+   &lt;ns1:Body&gt;
+      &lt;ns0:createFolder&gt;
+         &lt;ns0:token&gt;m6bp05800l24ok9jjfiuceqjv3&lt;/ns0:token&gt;
+         &lt;ns0:folderName&gt;2014_08_08_19_33_58 &lt;/ns0:folderName&gt;
+         &lt;ns0:folderDesc&gt;&lt;/ns0:folderDesc&gt;
+         &lt;ns0:folderType&gt;Testsuite&lt;/ns0:folderType&gt;
+         &lt;ns0:parentId&gt;1439&lt;/ns0:parentId&gt;
+      &lt;/ns0:createFolder&gt;
+   &lt;/ns1:Body&gt;
+&lt;/SOAP-ENV:Envelope&gt;</msg>
+<msg timestamp="20140808 19:40:07.355" level="ERROR">Calling listener method 'end_test' of listener 'QMetry_Listener' failed: WebFault: Server raised fault: 'Duplicate folder name'</msg>
+<msg timestamp="20140808 19:40:32.128" level="WARN">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;SOAP-ENV:Envelope xmlns:ns0="http://www.wso2.org/php/xsd" xmlns:ns1="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"&gt;
+   &lt;SOAP-ENV:Header/&gt;
+   &lt;ns1:Body&gt;
+      &lt;ns0:createFolder&gt;
+         &lt;ns0:token&gt;m6bp05800l24ok9jjfiuceqjv3&lt;/ns0:token&gt;
+         &lt;ns0:folderName&gt;2014_08_08_19_33_58 &lt;/ns0:folderName&gt;
+         &lt;ns0:folderDesc&gt;&lt;/ns0:folderDesc&gt;
+         &lt;ns0:folderType&gt;Testsuite&lt;/ns0:folderType&gt;
+         &lt;ns0:parentId&gt;1439&lt;/ns0:parentId&gt;
+      &lt;/ns0:createFolder&gt;
+   &lt;/ns1:Body&gt;
+&lt;/SOAP-ENV:Envelope&gt;</msg>
+<msg timestamp="20140808 19:40:32.130" level="ERROR">Calling listener method 'end_test' of listener 'QMetry_Listener' failed: WebFault: Server raised fault: 'Duplicate folder name'</msg>
+<msg timestamp="20140808 19:41:16.966" level="WARN">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;SOAP-ENV:Envelope xmlns:ns0="http://www.wso2.org/php/xsd" xmlns:ns1="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"&gt;
+   &lt;SOAP-ENV:Header/&gt;
+   &lt;ns1:Body&gt;
+      &lt;ns0:createFolder&gt;
+         &lt;ns0:token&gt;m6bp05800l24ok9jjfiuceqjv3&lt;/ns0:token&gt;
+         &lt;ns0:folderName&gt;2014_08_08_19_33_58 &lt;/ns0:folderName&gt;
+         &lt;ns0:folderDesc&gt;&lt;/ns0:folderDesc&gt;
+         &lt;ns0:folderType&gt;Testsuite&lt;/ns0:folderType&gt;
+         &lt;ns0:parentId&gt;1439&lt;/ns0:parentId&gt;
+      &lt;/ns0:createFolder&gt;
+   &lt;/ns1:Body&gt;
+&lt;/SOAP-ENV:Envelope&gt;</msg>
+<msg timestamp="20140808 19:41:16.968" level="ERROR">Calling listener method 'end_test' of listener 'QMetry_Listener' failed: WebFault: Server raised fault: 'Duplicate folder name'</msg>
+</errors>
+</robot>

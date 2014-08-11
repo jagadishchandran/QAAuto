@@ -1,0 +1,34 @@
+*** Settings ***
+Documentation  Demo on Robot Framework Automation Script Development
+
+Library  String
+Library  BuiltIn
+Library  OperatingSystem
+Library  Collections
+Library  Selenium2Library
+
+*** Variables ***
+${GRID}  True
+${LOGINURL}  http://dr.inventoryplus.dealertrack.com/admin
+${BROWSER}  ff
+${hub_server}  172.27.186.152
+
+*** Keywords ***
+Open Application
+    Run Keyword If  '${GRID.lower()}'=='true'  Open Browser  ${LOGINURL}  ${BROWSER}  None  http://${hub_server}:4444/wd/hub  ELSE  Open Browser  ${LOGINURL}  ${BROWSER}
+	
+*** Test Cases ***
+HomePage
+	Open Application
+	Element Should Be Visible  username
+	Close Window	
+	
+Login
+	Open Application
+	Input Text  username  top_qa
+	Input Password  password  test
+	Click Button  //input[contains(@src,'login')][@value='submit']
+	Wait Until Keyword Succeeds  3 min  30 sec   Element Should Contain  //span[@class='login_info']//span[@id='user_tooltip_trigger']//a  top_qa
+	Element Should Contain  //span[@class='login_info']  Logged in as
+	Close Window
+

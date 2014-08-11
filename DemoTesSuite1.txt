@@ -1,0 +1,26 @@
+*** Settings ***
+Documentation  Demo on Robot Framework Automation Script Development
+
+Library  String
+Library  BuiltIn
+Library  OperatingSystem
+Library  Collections
+Library  Selenium2Library
+
+*** Variables ***
+
+
+*** Keywords ***
+
+	
+*** Test Cases ***
+LogOut
+	Open Browser  http://dr.inventoryplus.dealertrack.com/admin  ff
+	Input Text  username  top_qa
+	Input Password  password  test
+	Click Button  //input[contains(@src,'login')][@value='submit']
+	Wait Until Keyword Succeeds  3 min  30 sec   Element Should Contain  //span[@class='login_info']//span[@id='user_tooltip_trigger']//a  top_qa
+	Element Should Contain  //span[@class='login_info']  Logged in as
+	Execute JavaScript  document.getElementById('user_tooltip').children.item(1).children.item(1).children.item(0).click();
+    Close Window
+
