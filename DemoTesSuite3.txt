@@ -15,7 +15,7 @@ ${hub_server}  5.99.10.25
 
 *** Keywords ***
 Open Application
-    Run Keyword If  '${GRID.lower()}'=='true'  Open Browser  ${LOGINURL}  ${BROWSER}  None  http://${hub_server}:4445/wd/hub  ELSE  Open Browser  ${LOGINURL}  ${BROWSER}
+    Run Keyword If  '${GRID.lower()}'=='true'  Open Browser  ${LOGINURL}  ${BROWSER}  None  http://${hub_server}:4444/wd/hub  ELSE  Open Browser  ${LOGINURL}  ${BROWSER}
 	
 *** Test Cases ***
 HomePage
