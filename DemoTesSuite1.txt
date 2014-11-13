@@ -15,7 +15,7 @@ Library  Selenium2Library
 	
 *** Test Cases ***
 LogOut
-	Open Browser  http://dr.inventoryplus.dealertrack.com/admin  ie
+	Open Browser  http://dr.inventoryplus.dealertrack.com/admin  ff
 	Input Text  username  top_qa
 	Input Password  password  test
 	Click Button  //input[contains(@src,'login')][@value='submit']
