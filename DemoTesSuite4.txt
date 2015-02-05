@@ -8,7 +8,7 @@ Library  Collections
 Library  Selenium2Library
 
 *** Variables ***
-${GRID}  True
+#${GRID}  True
 ${LOGINURL}  http://dr.inventoryplus.dealertrack.com/admin
 ${BROWSER}  ff
 ${hub_server}  5.99.10.25
