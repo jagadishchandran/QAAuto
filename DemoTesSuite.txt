@@ -20,7 +20,7 @@ Open Application
 *** Test Cases ***
 HomePage
 	Open Application
-	Element Should Be Visible  username
+	Element Should Be Visible  username1
 	Close Window	
 	
 Login
