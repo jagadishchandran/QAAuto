@@ -17,7 +17,7 @@ Library  Selenium2Library
 LogOut
 	Open Browser  http://dr.inventoryplus.dealertrack.com/admin  ff
 	Input Text  username  top_qa
-	Input Password  password  test
+	Input Password  password  test_1234
 	Click Button  //input[contains(@src,'login')][@value='submit']
 	Wait Until Keyword Succeeds  3 min  30 sec   Element Should Contain  //span[@class='login_info']//span[@id='user_tooltip_trigger']//a  top_qa
 	Element Should Contain  //span[@class='login_info']  Logged in as
