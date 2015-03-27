@@ -15,15 +15,17 @@ ${hub_server}  5.99.10.25
 
 *** Keywords ***
 Open Application
-    #Run Keyword If  '${GRID.lower()}'=='true'  Open Browser  ${LOGINURL}  ${BROWSER}  None  http://${hub_server}:4444/wd/hub  ELSE  Open Browser  ${LOGINURL}  ${BROWSER}
-    Open Browser  ${LOGINURL}  ${BROWSER}	
+    Run Keyword If  '${GRID.lower()}'=='true'  Open Browser  ${LOGINURL}  ${BROWSER}  None  http://${hub_server}:4444/wd/hub  ELSE  Open Browser  ${LOGINURL}  ${BROWSER}
+    
 *** Test Cases ***
 HomePage
+    [Documentation]  Verify the Home page is opened and displayed properly 
 	Open Application
 	Element Should Be Visible  username
 	Close Window	
 	
 Login
+    [Documentation]  Verify the login is successful for the Authenticated user, if the user provides correct credentials
 	Open Application
 	Input Text  username  top_qa
 	Input Password  password  test_123
