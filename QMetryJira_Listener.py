@@ -47,6 +47,7 @@ class QMetryJira_Listener:
         if (self.UpdateJira == "1" and stat == 'Fail'):
             bug = IntegrateJira.IntegrateJira()
             bugcreate = bug.update_defect(self.QMetryProject,name,documentation)
+            sys.stderr.write('Defect-Id Created in Jira: %s\n'  % bugcreate)
 
 			
 			
