@@ -29,7 +29,7 @@ class IntegrateJira:
         "id": projectid
         },
         "summary": "Testcase name: " + name + "   ***   " + documentation + "***  Got Failed",
-        "description": "Testcase name: " + name + "   ***   " + documentation + "***  Got Failed. This is created from automation run. Have to reproduce manually first and then analyse the issue."
+        "description": "Testcase name: " + name + "   ***   " + documentation + "***  Got Failed. This is created from automation run. Have to reproduce manually first and then analyse the issue.",
         "issuetype": {
         "name": "Bug"
         },
