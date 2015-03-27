@@ -33,13 +33,14 @@ class IntegrateJira:
         "name": "Bug"
         },
         "assignee": {
-        "name": "jchandran"
+        "name": "jagadish.chandran"
         },
         "reporter": {
-        "name": "jchandran"
+        "name": "jagadish.chandran"
         },
         "labels": ["automation_defects"]
         }
         }
         r = requests.post(url,data=json.dumps(payload), headers=headers, auth=HTTPBasicAuth(user,passwd))
         print r.json()['key']
+        return r
