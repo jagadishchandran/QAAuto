@@ -28,7 +28,7 @@ Login
 	Input Text  username  top_qa
 	Input Password  password  test_123
 	Click Button  //input[contains(@src,'login')][@value='submit']
-	Wait Until Keyword Succeeds  3 min  30 sec   Element Should Contain  //span[@class='login_info']//span[@id='user_tooltip_trigger']//a  top_qa
+	Wait Until Keyword Succeeds  30 sec   Element Should Contain  //span[@class='login_info']//span[@id='user_tooltip_trigger']//a  top_qa
 	Element Should Contain  //span[@class='login_info']  Logged in as
 	Close Window
 
