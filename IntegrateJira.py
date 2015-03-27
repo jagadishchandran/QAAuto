@@ -10,8 +10,8 @@ class IntegrateJira:
 
     def update_defect(self, QMetryProject, name, documentation):
         self.DEBUG_ON = False
-        url = "http://172.27.186.81:2990/rest/api/2/issue"
-        getprojecturl = "http://172.27.186.81:2990/rest/api/2/project/"
+        url = "http://172.27.186.81:2990/jira/rest/api/2/issue"
+        getprojecturl = "http://172.27.186.81:2990/jira/rest/api/2/project/"
         user = "jagadish.chandran"
         passwd = "Christ@123"
         headers = {"content-type": "application/json"}
