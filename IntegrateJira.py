@@ -43,4 +43,4 @@ class IntegrateJira:
         }
         r = requests.post(url,data=json.dumps(payload), headers=headers, auth=HTTPBasicAuth(user,passwd))
         print r.json()['key']
-        return r
+        return r.json()['key']
