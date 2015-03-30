@@ -1,3 +1,18 @@
+'''
+Version 1 - First Checkin - Varaprasad Bonam  <Varaprasad.Bonam@dealertrack.com>
+********************************
+Version 2 - Second Checkin - Jagadish Chandran  <Jagadish.Chandran@dealertrack.com>
+Notes: Changed the file to QMetryJira_Listener.py, calling  IntegrateJira.py
+for failed test cases to create defect in Jira. Also added bit to update test results
+and create defects in Jira.
+*******************************
+
+This is robot framework listener to update test results in QMetrt & create defects in Jira
+for the failed test cases. 
+Project name, Release Name, Build name, Bit value for Update test results & create defects,
+& Runtime folder are the parameters for this listener.
+'''
+
 import os.path
 import tempfile
 import sys
