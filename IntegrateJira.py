@@ -1,3 +1,10 @@
+'''
+Version 1 - First Checkin - Jagadish Chandran  <Jagadish.Chandran@dealertrack.com>
+
+This is python file to create defects in Jira using the rest api's exposed by Jira.
+Test case name, Project name & Test case Documentation should be passed to this function
+
+'''
 import requests
 import json
 from requests.auth import HTTPBasicAuth
