@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation  Demo on Robot Framework Automation Script Development
+Documentation  Demo on Robot Framework Automation Script Development testing
 
 Library  String
 Library  BuiltIn
